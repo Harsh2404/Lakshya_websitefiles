@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lakshya'19</title>
+	<style>
+		@font-face{
+			font-family: 'venator';
+			src:url('Venator Demo.ttf');
+		}
+
+      @font-face{
+      font-family: 'batman';
+      src:url('batmfa__.ttf');
+    }
+
+    @font-face{
+      font-family: 'mars';
+      src:url('House On Mars.ttf');
+    }
+
+    @font-face{
+      font-family: 'bear';
+      src:url('The Brittany Sans.ttf');
+    }
+
+     @font-face{
+      font-family: 'tech';
+      src:url('Technology.ttf');
+    }
+
+	</style>
+	 <link rel="stylesheet" type="text/css" href="mainhome.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+	<script type="text/javascript">
+           
+
+           	$(function(){
+
+                  $.scrollify({
+                     section : ".example-classname",
+                     sectionName : "section-name",
+                     interstitialSection : "",
+                     easing: "easeOutExpo",
+                     scrollSpeed: 800,
+                     offset : 0,
+                     scrollbars: true,
+                     standardScrollElements: "",
+                     setHeights: true,
+                     overflowScroll: true,
+                     updateHash: true,
+                     touchScroll:true,
+                     before:function(i) {
+
+                    
+                       $('#'+i).css({
+                         'border-style':'solid',
+                         'border-color':'transparent transparent #FF2B00 transparent',
+                       });
+                        $('#'+i).siblings().css('border','none');
+                        $('.whites').fadeIn(0);
+
+                     },
+                     after:function() {
+                      
+                        $('.whites').fadeOut(700);
+                        
+                     },
+                     afterResize:function() {},
+                     afterRender:function() {}
+                   });
+
+              $(document).on('mousemove',function(e){
+               var x=e.pageX;
+               $('.slider ul').css('left',-x+'px');
+               });
+
+              var k=0;
+
+              $('.scroller ul li').click(function(e){
+                   e.preventDefault();
+                   $('html,body').animate({
+
+                        scrollTop: $('.'+ $(this).data('roll')).offset().top
+
+                        },1000);
+                   
+              });
+
+              $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+                     $(this).toggleClass('open');
+                     k++;
+                    if ((k%2)==0) {
+                       $('.scroller').css('display','block');
+                       $('#nav-icon1 span').css('background','#fff');
+                       $('.wholemenu').fadeOut();
+                       $('.wholehome').fadeIn();
+                    }else{
+                       $('.scroller').css('display','none');
+                       $('#nav-icon1 span').css('background','#000');
+                       $('.wholemenu').fadeIn();
+                       $('.wholehome').fadeOut();
+
+                }
+        });
+
+
+		});
+      
+	</script>
+</head>
+<body>
+<div class="whites"></div>
+<div id="nav-icon1">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="media">
+  <a href="#"><img src="facebook-logo-png-white-i6.png"></a>
+  <a href="#"><img src="instagram (1).svg"></a>
+  <a href="#"><img src="twitter (1).svg"></a>
+  <a href="#"><img src="white-play-button.transparentbg.png"></a>
+</div>
+
+<div class="scroller">
+  <ul>
+     <li id="0" data-roll='one'>HOME</li>
+     <li id="1" data-roll='two'>ABOUT US</li>
+     <li id="2" data-roll='three'>TECH-RITORY</li>
+     <li id="3" data-roll='four'>ZAPDOS</li>
+     <li id="4" data-roll='five'>ILLUMINATE</li>
+     <li id="5" data-roll='six'>TALKS</li>
+     <li id="6" data-roll='seven'>STATISTICS</li>
+     <li id="7" data-roll='eight'>CONTACT US</li>
+
+  </ul>
+
+</div>
+
+ <div>
+<div class="wholehome">
+      <div class="example-classname one"><img src="LAKSHYAHOME2.png"></div>
+      <div class="example-classname two"><img src="102.jpg">
+        <div class="round"><span>EXPLORE</span><form action='#'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">ABOUT US</div>     
+        <div class="desc">It is the annual Edu-TechFest of L.D.College of Engineering organized by TEAM ROBOCON LDCE.
+        </div>
+        </div>
+      </div>
+      <div class="example-classname three"><img src="technitory.jpg">
+        <div class="round"><span>EXPLORE</span><form action="techritory/mainer.htm"><button class="circle" type="submit"></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">TECH-RITORY</div>
+       
+        <div class="desc">Any sufficiently advanced technology is indistinguishable from magic. With ample technical knowledge and sharp technical skills triumph and rejoice your involvement in the scrutinizing technical events of Lakshya 2k19.
+        </div>
+        </div>
+      </div>
+      <div class="example-classname four"><img src="zapdus.jpg">
+        <div class="round"><span>EXPLORE</span><form action='zapdos/mainer.htm'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">ZAPDOS</div>
+        <div class="desc">A person is so much more than the name of a degree on a chart. Find your inner selves in these “out of the books” events, may it be spelling the complicated, more or less be it cricket or may it be presenting your TV series wisdom or ghostly gaming skills. Lakshya 2019 gives you a platform to dodge in with your cleverness.
+        </div>
+        </div>
+      </div>
+      <div class="example-classname five"><img src="illu 2.jpg">
+        <div class="round"><span>EXPLORE</span><form action='#'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">ILLUMINATE</div>
+        <div class="desc">The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them. Unless you try to do something beyond what you have already mastered, you will never grow. This year embrace yourselves as we bring in front of you the gargantuan of knowledge through the “Illuminate Workshop Series”.
+        </div>
+        </div>
+      </div>
+      <div class="example-classname six"><img src="talks.jpg">
+        <div class="round"><span>EXPLORE</span><form action='#'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">TALKS</div>
+        <div class="desc">Every once in a while a new technology, an old problem, and a big idea turn into an innovation. We value the great ideas and hope to spread them even further. This year indulge in the beginning of a new era with ‘Vision 2030’.
+        </div>
+        </div>
+      </div>
+      <div class="example-classname seven"><img src="stats.jpg">
+        <div class="round"><span>EXPLORE</span><form action='#'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">STATISTICS</div>   
+        <div class="desc">
+        </div>
+        </div>
+      </div>
+      <div class="example-classname eight"><img src="102.jpg">
+        <div class="round"><span>CONTACT</span><form action='#'><button class="circle" type='submit'></button></form></div>
+        <div class="wholedesc">
+        <div class="heads">CONTACT US</div>
+        <div class="desc">
+        </div>
+        </div>
+      </div>
+</div>
+</div>
+
+<div class="wholemenu">
+   <img src="4 (1).png" class="backimg">
+   <div class="back"><div class="container">
+  <div class="slider">
+   
+   <ul>
+    <li><a data-roll="1" href="mainhome.htm"><sup class="num">01</sup> HOME</a></li>
+    <li><a  data-roll="2" href="techritory/mainer.htm"><sup class="num">02</sup> TECH-RITORY</a> </li>  
+      <li><a  data-roll="3" href="zapdos/mainer.htm"><sup class="num">03</sup> ZAPDOS</a></li>
+      <li><a  data-roll="4" href="#"><sup class="num">04</sup> ILLUMINATE</a></li>
+      <li><a  data-roll="5" href="#"><sup class="num">05</sup> TALKS</a></li>
+   </ul>
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
